@@ -7,12 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
     body { 
-        /* Capa oscura + Tu imagen de Canva */
-        background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('fondoo.png'); 
+        background-color: #0f172a; 
+        /* Capa oscura para legibilidad + Imagen ajustada al 25% del tamaño original */
+        background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('./fondoo.png'); 
         background-attachment: fixed;
-        background-size: cover;
+        background-repeat: repeat; /* Se repite para cubrir todo como un patrón */
+        background-size: 250px; /* Aquí ajustamos para que los logos se vean 75% más pequeños */
         background-position: center;
-        background-color: #0f172a;
     }
     .card-glass { 
         background: rgba(30, 41, 59, 0.5);
@@ -20,7 +21,6 @@
         backdrop-filter: blur(15px);
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    /* Efecto de brillo suave a los títulos */
     .text-glow {
         text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
     }
@@ -64,5 +64,6 @@
     </div>
 </body>
 </html>
+
 
 
