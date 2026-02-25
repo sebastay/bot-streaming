@@ -6,13 +6,23 @@
     <title>Elite Streaming | Premium</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-    body { background-color: #0f172a; }
+    body { 
+        /* Capa oscura + Tu imagen de Canva */
+        background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('fondoo.png'); 
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-color: #0f172a;
+    }
     .card-glass { 
-        background: rgba(30, 41, 59, 0.7);
-        /* Esta es la línea que corrige el aviso para Safari/iPhone */
-        -webkit-backdrop-filter: blur(10px); 
-        backdrop-filter: blur(10px);
+        background: rgba(30, 41, 59, 0.5);
+        -webkit-backdrop-filter: blur(15px); 
+        backdrop-filter: blur(15px);
         border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    /* Efecto de brillo suave a los títulos */
+    .text-glow {
+        text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
     }
 </style>
 </head>
@@ -20,7 +30,7 @@
 
     <div class="max-w-4xl mx-auto px-6 py-12">
         <header class="text-center mb-16">
-            <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+            <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 text-glow">
                 ELITE STREAMING
             </h1>
             <p class="mt-4 text-slate-400 text-lg">Cuentas 100% Originales • Entrega Inmediata</p>
@@ -32,7 +42,7 @@
                 <p class="text-slate-400 mb-6 italic">1 Pantalla • Perfil Privado • Ultra HD</p>
                 <div class="flex justify-between items-end">
                     <span class="text-3xl font-bold">$15.000 <small class="text-sm font-light text-slate-500">/mes</small></span>
-                    <a href="https://wa.me/573148979220?text=Hola,%20quiero%20Netflix%20Premium" 
+                    <a href="https://wa.me/573148979220?text=Hola!%20Vengo%20de%20tu%20Web.%20Quiero%20comprar%20Netflix%20Premium" 
                        class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-blue-900/40">
                         Comprar
                     </a>
@@ -44,7 +54,7 @@
                 <p class="text-slate-400 mb-6 italic">Calidad IMAX • Todo el contenido</p>
                 <div class="flex justify-between items-end">
                     <span class="text-3xl font-bold">$12.000 <small class="text-sm font-light text-slate-500">/mes</small></span>
-                    <a href="https://wa.me/573148979220?text=Hola,%20quiero%20Disney%20Plus" 
+                    <a href="https://wa.me/573148979220?text=Hola!%20Vengo%20de%20tu%20Web.%20Quiero%20comprar%20Disney%20Plus" 
                        class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-blue-900/40">
                         Comprar
                     </a>
@@ -54,6 +64,5 @@
     </div>
 </body>
 </html>
-
 
 
